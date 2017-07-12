@@ -1,0 +1,35 @@
+<?php
+					if(isset($_POST['asunto']) && !empty($_POST['asunto'])
+						
+&& isset($_POST['mensaje']) && !empty($_POST['mensaje']))
+					
+{
+						
+$destino="jeralbenites@gmail.com";
+	
+					
+$desde= "From:"."Jerameel";
+						
+$asunto=$_POST['asunto'];
+						
+$mensaje=$_POST['mensaje'];
+						
+mail($destino,$asunto,$mensaje,$desde);
+						
+echo "Correo Enviado...!!!" ;
+ 
+?>
+ 
+					
+<a href="#contact">Contacto</a>
+
+<?php
+	
+}else{
+						
+echo"Problemas Al Enviar el Correo!!!";
+					
+}
+					?>
+ 
+    

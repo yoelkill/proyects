@@ -1,0 +1,66 @@
+
+#
+CREATE  DATABASE  conexionandroidphp;
+
+USE conexionandroidphp;
+
+
+CREATE TABLE IF NOT EXISTS docente (
+  coddocente int(11) NOT NULL auto_increment,
+  nombdocente varchar(50) ,
+  apellipaterdocente varchar(50) ,
+  apellimaterdocente varchar(50) ,
+  dnidocente varchar(50) ,
+  edaddocente varchar(10) ,
+  PRIMARY KEY (coddocente)
+);
+
+
+
+#
+# Dumping data for table 'docente'
+#
+INSERT INTO docente VALUES("1", "ALBERTO", "PETRLIK", "AZABACHE", "46346", "46");
+INSERT INTO docente VALUES("11", "ALBERTO", "MORENO", "CUEVA", "3465346", "12");
+INSERT INTO docente VALUES("12", "JUAN", "VERA", "CASTILLO", "666", "59");
+INSERT INTO docente VALUES("10", "ALBERTO", "PETRLIK", "AZABACHE", "637437", "34");
+
+
+#
+# Table structure for table 'persona'
+#
+
+CREATE TABLE IF NOT EXISTS persona (
+  CODPERSO int(11) NOT NULL auto_increment,
+  NOMBPERSO varchar(50) ,
+  APELLIPERSO varchar(50) ,
+  PRIMARY KEY (CODPERSO)
+);
+
+
+
+#
+# Dumping data for table 'persona'
+#
+INSERT INTO persona VALUES("52", "IVAN", "PETRLIK");
+
+
+#
+# Table structure for table 'usuario'
+#
+
+CREATE TABLE IF NOT EXISTS usuario (
+  codusu int(3) unsigned NOT NULL auto_increment,
+  usu varchar(50) DEFAULT '0' ,
+  cla varchar(3) DEFAULT '0' ,
+  PRIMARY KEY (codusu)
+);
+
+
+
+#
+# Dumping data for table 'usuario'
+#
+INSERT INTO usuario VALUES("1", "ivan", "123");
+INSERT INTO usuario VALUES("2", "larissa", "255");
+INSERT INTO usuario VALUES("3", "alberto", "255");
